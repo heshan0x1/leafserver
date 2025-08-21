@@ -12,9 +12,14 @@ Leaf server is licensed under the Apache License, Version 2.0. See [LICENSE](htt
 leafserver/
 ```
 
+增加配置
+```
+GOPROXY=https://goproxy.cn,direct
+```
+
 server 目录下执行
 ```shell
-go mod init leafserver   
+go mod init server   
 go mod tidy 
 go get github.com/name5566/leaf
 ```
